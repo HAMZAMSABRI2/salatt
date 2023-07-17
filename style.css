@@ -1,0 +1,19 @@
+.row{
+    border: 1px solid black;
+    width: 15%;
+    
+    border-radius: 10px;
+    height: 10vh;
+    margin-top: 25px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    align-items: center;
+    margin-right: auto;
+    margin: auto;
+}
+
+.col{
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    margin-top: 25px;
+}
