@@ -9,7 +9,7 @@
     align-items: center;
     margin-right: auto;
     margin: auto;
-
+    padding: 15px;
     background: #fff;
     border: 1px solid rgba(161, 177, 167, .45);
     border-radius: 0;
@@ -24,40 +24,18 @@
 }
 
 
-/*
-**************
-*/
 
-.auto-search-wrapper {
-    position: relative;
-}
-
-.auto-search-wrapper #search {
-    padding-left: 40px;
-}
-
-.auto-search-wrapper::before {
-    content: "";
-    background-image: url("https://static.vecteezy.com/system/resources/previews/009/266/537/original/location-icon-design-free-png.png");
-    background-size: 30px 30px;
-    background-repeat: no-repeat;
-    position: absolute;
-    left: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 30px;
-    height: 30px;
-}
 
 
 
 .card {
     background-color: #efe9e4;
-    width: 130vh;
+    width: 150vh;
     margin: auto;
     display: flex;
     margin-top: 10%;
-    border-radius: 18px;
+    border-radius: 10px;
+    border: NONE;
 }
 
 
@@ -75,7 +53,7 @@
     display: flex;
     justify-content: space-around;
 }
-
+/* responsive design */
 @media (max-width: 1200px) {
 
     .card {
@@ -97,16 +75,73 @@
         border-radius: 10px;
     }
 
-    .content{
+    .content {
         display: block;
     }
 
-    .content p{
+    .content p {
         text-align: center;
         /*font-size: 12px;*/
     }
 
-    .content h5{
+    .content h5 {
         text-align: center;
     }
 }
+/* design input search */
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+  }
+  
+  .search__input {
+    font-family: inherit;
+    font-size: inherit;
+    background-color: #f4f2f2;
+    border: none;
+    color: #646464;
+    padding: 0.7rem 1rem;
+    border-radius: 30px;
+    width: 152vh;
+    transition: all ease-in-out .5s;
+    margin-right: -2rem;
+  }
+  
+  .search__input:hover, .search__input:focus {
+    box-shadow: 0 0 1em #00000013;
+  }
+  
+  .search__input:focus {
+    outline: none;
+    background-color: #f0eeee;
+  }
+  
+  .search__input::-webkit-input-placeholder {
+    font-weight: 100;
+    color: #ccc;
+  }
+  
+  .search__input:focus + .search__button {
+    background-color: #f0eeee;
+  }
+  
+  .search__button {
+    border: none;
+    background-color: #f4f2f2;
+    margin-top: .1em;
+  }
+  
+  .search__button:hover {
+    cursor: pointer;
+  }
+  
+  .search__icon {
+    height: 20px;
+    width:15px;
+    fill: #b4b4b4;
+  }
+
+
+
