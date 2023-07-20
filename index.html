@@ -10,104 +10,97 @@
     <link rel="stylesheet" href="style.css">
 
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/tomickigrzegorz/autocomplete@1.8.6/dist/css/autocomplete.min.css" />
-    <script src="https://cdn.jsdelivr.net/gh/tomickigrzegorz/autocomplete@1.8.6/dist/js/autocomplete.min.js"></script>
-    <script src="github-corner.js"></script>
-
-
-
+    href="https://cdn.jsdelivr.net/gh/tomickigrzegorz/autocomplete@1.8.6/dist/css/autocomplete.min.css" />
+    
+    
+    
 </head>
 
 
 <body>
     <form action="contoller.php" method="get">
-        <div class="card" style="
-          width: 130vh;
-          margin: auto;
-          display: flex;
-          margin-top: 10%;
-          border-radius: 18px;
-        ">
+        <div class="card">
             <!-- <img src="" class="card-img-top" alt="..."> -->
             <div class="card-body" style="border-radius: 18px">
                 <div class="content">
+                    
+                    <h2 class="">Horaires de prières à <span class="city"></span></h2>
 
-                    <h2 class="text-center">Horaires de prières</h2>
+                    <h2 class="date"></h2>
                 </div>
-
-
-
+                
+                
+                
                 <div class="auto-search-wrapper">
                     <input type="text" autocomplete="off" id="search" class="full-width"
-                        placeholder="enter the city name" />
+                    placeholder="Consulter la ville concernée" />
                 </div>
-
-                <button type="submit" class="btn btn-warning w-100" style="margin-top: 20px">
+                
+                <button type="submit" class="btn btn-success" style="margin-top: 20px;width:100%;">
                     VALIDER
                 </button>
                 <div class="col">
                     <div class="row">
-                        <h5 class="text-center">
+                        <h5 class="text-center salat">
                             
                         </h5>
-
-                        <p class="text-center" id="date">
+                        
+                        <p class="text-center hour" >
                             
                         </p>
                     </div>
                     <div class="row">
-                        <h5 class="text-center">
-                            Chourouk
+                        <h5 class="text-center salat">
+                            
                         </h5>
-
-                        <p class="text-center">
-                            04:46
+                        
+                        <p class="text-center hour">
+                            
                         </p>
                     </div>
                     <div class="row">
-                        <h5 class="text-center">
-                            DOHR
+                        <h5 class="text-center salat">
+                            
                         </h5>
-
-                        <p class="text-center">
-                            04:46
+                        
+                        <p class="text-center hour">
+                            
                         </p>
                     </div>
                     <div class="row">
-                        <h5 class="text-center">
-                            ASR
+                        <h5 class="text-center salat">
+                            
                         </h5>
-
-                        <p class="text-center">
-                            04:46
+                        
+                        <p class="text-center hour">
+                            
                         </p>
                     </div>
                     <div class="row">
-                        <h5 class="text-center">
-                            MAGHREB
+                        <h5 class="text-center salat">
+                            
                         </h5>
-
-                        <p class="text-center">
-                            04:46
+                        
+                        <p class="text-center hour">
+                            
                         </p>
                     </div>
                     <div class="row">
-
-                        <h5 class="text-center">
-                            ICHA
+                        
+                        <h5 class="text-center salat">
+                            
                         </h5>
-
-                        <p class="text-center">
-                            04:46
+                        
+                        <p class="text-center hour">
+                            
                         </p>
                     </div>
-
-
-
-
-
+                    
+                    
+                    
+                    
+                    
                 </div>
             </div>
         </div>
@@ -115,7 +108,10 @@
     <script src="script.js"></script>
     <script src="./data/data.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/tomickigrzegorz/autocomplete@1.8.3/dist/js/autocomplete.min.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/gh/tomickigrzegorz/autocomplete@1.8.6/dist/js/autocomplete.min.js"></script>
+    
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    
 </body>
 
 </html>

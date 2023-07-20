@@ -1,19 +1,112 @@
-.row{
-    border: 1px solid black;
+.row {
+    border: 1px solid rgb(130, 185, 126);
     width: 15%;
-    
+
     border-radius: 10px;
     height: 10vh;
     margin-top: 25px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    box-shadow: rgba(132, 189, 128, 0.25) 0px 50px 100px -20px, rgba(120, 180, 122, 0.3) 0px 30px 60px -30px;
     align-items: center;
     margin-right: auto;
     margin: auto;
+
+    background: #fff;
+    border: 1px solid rgba(161, 177, 167, .45);
+    border-radius: 0;
+    text-transform: uppercase;
 }
 
-.col{
+.col {
     display: flex;
     margin: auto;
     justify-content: space-between;
     margin-top: 25px;
+}
+
+
+/*
+**************
+*/
+
+.auto-search-wrapper {
+    position: relative;
+}
+
+.auto-search-wrapper #search {
+    padding-left: 40px;
+}
+
+.auto-search-wrapper::before {
+    content: "";
+    background-image: url("https://png.pngtree.com/png-clipart/20200722/original/pngtree-abstract-mosque-moslem-logo-vector-for-corporate-business-free-logo-design-png-image_5007078.jpg");
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+}
+
+
+
+.card {
+    background-color: #efe9e4;
+    width: 130vh;
+    margin: auto;
+    display: flex;
+    margin-top: 10%;
+    border-radius: 18px;
+}
+
+
+.hour {
+    font-family: Gotham Bold, sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 20px;
+    font-size: 25px;
+    color: rgb(130, 185, 126);
+}
+
+
+.content {
+    display: flex;
+    justify-content: space-around;
+}
+
+@media (max-width: 1200px) {
+
+    .card {
+        width: 46vh;
+    }
+
+    .col {
+        display: block;
+    }
+
+    .btn {
+        width: 45%;
+
+    }
+
+    .row {
+        width: auto;
+        margin-top: 25px;
+        border-radius: 10px;
+    }
+
+    .content{
+        display: block;
+    }
+
+    .content p{
+        text-align: center;
+        /*font-size: 12px;*/
+    }
+
+    .content h5{
+        text-align: center;
+    }
 }
